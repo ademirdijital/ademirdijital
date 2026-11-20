@@ -1,0 +1,36 @@
+{
+	"name": "ademirdijital",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*"
+	},
+	"scripts": {
+		"dev": "bun --bun vite dev",
+		"build": "bun --bun vite build",
+		"preview": "bun --bun vite preview",
+		"prepare": "svelte-kit sync || echo \"\"",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "biome check .",
+		"format": "biome check --write .",
+		"fonts": "bun scripts/subset-fonts.ts"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.6.8",
+		"@fontsource-variable/archivo": "^5.3.0",
+		"@sveltejs/adapter-static": "^4.0.1",
+		"@sveltejs/enhanced-img": "^1.0.1",
+		"@sveltejs/kit": "^3.2.0",
+		"@sveltejs/vite-plugin-svelte": "^7.3.1",
+		"@tailwindcss/vite": "^4.3.5",
+		"subset-font": "^2.9.0",
+		"svelte": "^5.57.3",
+		"svelte-check": "^4.7.8",
+		"tailwindcss": "^4.3.5",
+		"typescript": "^6.0.3",
+		"vite": "^8.3.8"
+	}
+}

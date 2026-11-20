@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ademirdijital.com/sitemap.xml
